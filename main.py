@@ -11,15 +11,18 @@ as much as possible with my clumsy bot =)
 """
 
 from random import choice
+import os
 
 import telebot  # type: ignore
 from telebot import types
+from dotenv import load_dotenv
 
 from pyblackjack import Constants as Const
 from pyblackjack import Game
 
 
-dealer_bot = telebot.TeleBot('6776895923:AAGtVXW8H2GfXnYCCpnNj0w-Pg8tbHAWHV4')
+load_dotenv()
+dealer_bot = telebot.TeleBot(os.getenv('TOKEN'))
 
 
 @dealer_bot.message_handler(commands=['start'])
