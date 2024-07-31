@@ -25,4 +25,4 @@
 
 ---
 
-Author: [linkoffee](https://github.com/linkoffee)
+Author: [Mikhail Kopochinskiy](https://github.com/linkoffee)
